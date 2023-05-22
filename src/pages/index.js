@@ -29,7 +29,7 @@ export default function Home() {
                     Aqui, você encontrará uma maneira prática e criativa de aproveitar ao máximo os ingredientes disponíveis na sua geladeira. O objetivo deste aplicativo é ajudá-lo a descobrir receitas deliciosas e nutritivas com base nos itens que você tem atualmente em sua geladeira. Vamos começar!
                     </p>
                     <div className='flex items-center self-start mt-2'>
-                      <Link href="/fridge" target='_blank' className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold 
+                      <Link href="/fridge" className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold 
                       hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
                       >Try<LinkArrow className="w-6 ml-1"/></Link>
                     </div>

@@ -1,11 +1,24 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
 import Head from "next/head";
-import React from "react";
-import workpic from "../../public/images/profile/Work-in-progress.png"
-import Image from "next/image";
+import React, { useRef, useState } from "react";
+import { verificarIngrediente, verificarTags } from "@/components/functions";
 
 const fridge = () => {
+    const [receitas, setReceitas] = useState([])
+    const ingredientes = useRef()
+
+    function handleClick(){
+        const listaIngredientes = ingredientes.current.value.split('/')
+
+        const array = verificarIngrediente(listaIngredientes)
+
+       setReceitas([...array])
+    }
+
+    function handleReset(){
+        const deletedItem = receitas.shift()
+        
+        setReceitas(receitas.filter(receita => receita != deletedItem))
+    }
 
     return(
         <>
@@ -13,21 +26,26 @@ const fridge = () => {
                 <title>Frigde Chef || Articles</title>
                 <meta name="descripition" content="Articles"></meta>
         </Head>
-        <main className="flex w-full flex-col items-center justify-center">
-            <Layout className="pt-16">
-                <AnimatedText className="mb-16" text="Work in Progress"/>
-                <div className="w-full flex flex-col justify-center items-center gap-10">
+        <main>
 
-                    <div className="col-span-3 w-64 h-64 relative rounded-2xl border-2 border-solid border-dark bg-light">
-                        <Image src={workpic} className="w-full h-full" />
+                {receitas.length != 0 && (
+                    <div className="flex flex-col border border-black justify-center items-center gap-2">
+                        <h1 className="font-bold">{receitas[0].nome}</h1>
+                        {/* {receitas[0].ingredientes.map(ingrediente => {return(<h2>{ingrediente}</h2>)})} */}
+                        <h2>{receitas[0].ingredientesReais}</h2>
+                        <h2>{receitas[0].modoDePreparo}</h2>
                     </div>
-                    <div className="w-72 bg-green-300 rounded-full dark:bg-gray-700">
-                        <div className="bg-green-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full w-[30%]">30%</div>
-                    </div>
-                </div>
-            </Layout>
+                    )
+                }
+
+            <div className='flex items-center self-start mt-2'>
+                <input ref={ingredientes} />
+                
+                <button onClick={() => handleClick()} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark" >Gerar</button>
+                <button onClick={() => handleReset()} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark" >Reset</button>
+            </div>
         </main>
-    </>
+    </> 
     )
 }
 export default fridge
