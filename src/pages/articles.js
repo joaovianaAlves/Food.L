@@ -19,7 +19,7 @@ const articles = () => {
                 <div className="w-full flex flex-col justify-center items-center gap-10">
 
                     <div className="col-span-3 w-64 h-64 relative rounded-2xl border-2 border-solid border-dark bg-light">
-                        <Image src={workpic} className="w-full h-full" fill sizes="(max-width: 768px) 100vw, (max-width: 768px) 50vw, 33vw"/>
+                        <Image src={workpic} className="w-full h-full"/>
                     </div>
                     <div className="w-72 bg-green-300 rounded-full dark:bg-gray-700">
                         <div className="bg-green-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full w-[30%]">30%</div>

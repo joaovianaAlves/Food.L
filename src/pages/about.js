@@ -27,7 +27,7 @@ const about = () => {
                             </p>
                         </div>
 
-                        <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
+                        <div className="col-span-3 w-64 h-64 relative rounded-2xl border-2 border-solid border-dark bg-light">
                             <Image src={Aboutpic} className="w-full h-full"/>
                         </div>
 
