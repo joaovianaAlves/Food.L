@@ -1,14 +1,14 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { Fpic } from "../../public/images/profile/Design sem nome-2.png"
+import { Fpic } from "../../public/images/profile/Fridge.png"
 const MotionLink = motion(Link);
 
 const Logo = () =>{
     return(
         <div className="flex items-center justify-center mt-2">
             
-            <img src='/images/profile/Design sem nome-2.png' className="w-16 h-16 border border-black rounded-full"/>
+            <img src='/images/profile/Fridge.png' className="w-16 h-16 animation border border-black rounded-full" />
             
             {/* <MotionLink 
                 href="/" 
