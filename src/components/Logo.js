@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { Fpic } from "../../public/images/profile/Fridge.png"
+import { Fpic } from "../../public/images/profile/Design sem nome-2.png"
 const MotionLink = motion(Link);
 
 const Logo = () =>{
