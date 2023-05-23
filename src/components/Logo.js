@@ -8,7 +8,7 @@ const Logo = () =>{
     return(
         <div className="flex items-center justify-center mt-2">
             
-            <img src={Fpic} className="w-16 h-16"/>
+            <img src='/images/profile/Fridge.png' className="w-16 h-16 border border-black rounded-full"/>
             
             {/* <MotionLink 
                 href="/" 
