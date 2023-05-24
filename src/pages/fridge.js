@@ -35,8 +35,8 @@ const fridge = () => {
                         <div className="flex flex-col p-4 justify-center items-center w-2/3 gap-2">
                             <h1 className="font-bold">{receitas[0].nome}</h1>
                             {/* {receitas[0].ingredientes.map(ingrediente => {return(<h2>{ingrediente}</h2>)})} */}
-                            <div className="grid grid-cols-2">
-                            <ul  className="flex flex-col justify-center list-disc">{receitas[0].ingredientesReais.map
+                            <div className="grid grid-cols-2 w-full">
+                            <ul  className="flex flex-col justify-center list-disc ml-5">{receitas[0].ingredientesReais.map
                             ((data, index) => {
                                 return(
                                     <li key={index}>{data}</li>
@@ -56,10 +56,10 @@ const fridge = () => {
                 }
 
             <div className="absolute flex bottom-4 gap-2">
-            <div className="flex bg-neutral-500 rounded-lg items-center gap-2">
-                <input className="border-none p-2.5 rounded-md text-sm bg-neutral-500 text-white focus:outline-none" ref={ingredientes}/>
+            <div className="flex bg-neutral-300 rounded-lg items-center gap-2">
+                <input className="border-none p-2.5 rounded-md text-sm bg-neutral-300 text-dark focus:outline-none" ref={ingredientes}/>
                 
-                <button onClick={() => handleClick()} className="flex items-center bg-transparent text-light p-2.5 px-2 text-sm font-semibold border-l border-neutral-700" ><HiOutlineMagnifyingGlassCircle size={25}/></button>
+                <button onClick={() => handleClick()} className="flex items-center bg-transparent text-light p-2.5 px-2 text-sm font-semibold border-l border-neutral-00" ><HiOutlineMagnifyingGlassCircle size={25} className="text-black"/></button>
             </div>
             <button onClick={() => handleReset()} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-md text-sm font-semibold hover:bg-light hover:text-dark border-2 border-solid borderl border-neutral-800" >Reset</button>
             </div>
