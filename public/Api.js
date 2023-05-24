@@ -16,6 +16,22 @@ export const receitas = [
         + " 6. Sirva em seguida."
     },
     {
+        nome: 'Strognoff de Frango',
+        ingredientes: [
+            'frango', 'creme de leite', 'manteiga'
+        ],
+        ingredientesReais: [
+            '500g de peito de frango picado em cubos', '1 caixinha de creme de leite', '1 colher (sopa) de ketchup', '1 colher (sopa) de manteiga'
+        ],
+        tags: ['Salgado'],
+        modoDePreparo: 
+              " 1. Cozinhe o peito de frango até ficar bem cozido. \n "
+            + " 2. Após o cozimento, adicione o molho de tomate e cozinhe por 5 minutos em fogo baixo. \n "
+            + " 3. Em seguida, adicione o creme de leite e cozinhe por mais 3 minutos, também em fogo baixo. \n "
+            + " 4. Por último, adicione o sal a gosto. \n "
+            + " 5. Sirva com batata palha e arroz branco à parte. \n "
+    },
+    {
         nome: 'Bolo',
         ingredientes: [
             'farinha', 'nescau', 'ovo', 'fermento'
