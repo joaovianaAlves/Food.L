@@ -33,7 +33,7 @@ const NavBar = () =>{
             <nav className="h-full  flex items-center justify-center flex-wraps">
 
                 <div className="h-full w-full group">
-                        <button className="h-full w-full bg-yellow-100">z</button>
+                        <button className="h-full w-full bg-yellow-100 flex justify-center pt-6"><HiBars3BottomRight size={25} className="text-black"/></button>
                         <Dropdown />
                     </div>
 

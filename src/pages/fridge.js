@@ -32,28 +32,30 @@ const fridge = () => {
         <main className="relative border-solid border-black flex flex-col items-center justify-center min-h-[100vh] gap-4">
 
                 {receitas.length != 0 && (
-                        <div className=" p-4 justify-center items-center w-1/3 gap-2">
-                                    <div className="border-black border-2 p-3">
+                        <div className="pb-20 p-4 justify-center items-center w-1/3 gap-2">
+                                    <div className="border-black border-2 p-3 ">
                                         <div className="w-full border-black border-2 rounded-md p-4">
+                                            
                                             <div>
                                                 <h1 className="text-center font-bold text-3xl pb-10 py-4">{receitas[0].nome}</h1>
                                                 {/* {receitas[0].ingredientes.map(ingrediente => {return(<h2>{ingrediente}</h2>)})} */}
                                             </div>
 
-                                        <h2 className="font-bold py-2">Ingredientes:</h2>
-                                            <ul  className="justify-center list-disc ml-5">{receitas[0].ingredientesReais.map
-                                            ((data, index) => {
-                                                return(
-                                                    <li key={index}>{data}</li>
-                                                )
-                                            })}</ul>
+                                                <h2 className="font-bold py-2">Ingredientes:</h2>
+                                                <ul  className="justify-center list-disc ml-5">{receitas[0].ingredientesReais.map
+                                                    ((data, index) => {
+                                                        return(
+                                                            <li key={index}>{data}</li>
+                                                        )
+                                                    })}
+                                                </ul>
                                             
-                                            <h2 className="font-bold py-2">Modo de Preparo:</h2>
-                                            {receitas[0].modoDePreparo.map((data, index)=>{
-                                                return(
-                                                    <h2 key={index}>{data}</h2>
-                                                )
-                                            })}
+                                                <h2 className="font-bold py-2">Modo de Preparo:</h2>
+                                                    {receitas[0].modoDePreparo.map((data, index)=>{
+                                                        return(
+                                                            <h2 key={index}>{data}</h2>
+                                                        )
+                                                    })}
 
                                             {/* {receitas[0].imagem ? <img className="border-solid border-black relative border-3  left-60 w-56 h-56 object-cover rounded-sm" src={receitas[0].imagem}/> : null }
                                             </div>

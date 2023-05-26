@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
-import Aboutpic from "../../public/images/profile/Recipe-book-rafiki.png"
+import Aboutpic from "../../public/images/profile/Recipe-book-rafiki.png";
 
 const about = () => {
 
@@ -33,7 +33,7 @@ const about = () => {
                             </p>
                         </div>
 
-                        <div className="col-span-4 w-160 h-160">
+                        <div className="col-span-4 w-full h-120">
                             <Image src={Aboutpic} className="w-full h-full"/>
                         </div>
 
