@@ -42,7 +42,7 @@ const fridge = () => {
                                     <li key={index}>{data}</li>
                                 )
                             })}</ul>
-                            {receitas[0].imagem ? <img className="relative left-20 w-56 h-56 object-cover rounded-sm" src={receitas[0].imagem}/> : null }
+                            {receitas[0].imagem ? <img className="border-solid border-black relative border-3  left-20 w-56 h-56 object-cover rounded-sm" src={receitas[0].imagem}/> : null }
                             </div>
                             <div className="w-full">
                             {receitas[0].modoDePreparo.map((data, index)=>{
@@ -56,12 +56,14 @@ const fridge = () => {
                 }
 
             <div className="absolute flex bottom-4 gap-2">
-            <div className="flex bg-neutral-300 rounded-lg items-center gap-2">
-                <input className="border-none p-2.5 rounded-md text-sm bg-neutral-300 text-dark focus:outline-none" ref={ingredientes}/>
-                
-                <button onClick={() => handleClick()} className="flex items-center bg-transparent text-light p-2.5 px-2 text-sm font-semibold border-l border-neutral-00" ><HiOutlineMagnifyingGlassCircle size={25} className="text-black"/></button>
-            </div>
-            <button onClick={() => handleReset()} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-md text-sm font-semibold hover:bg-light hover:text-dark border-2 border-solid borderl border-neutral-800" >Reset</button>
+                <div className="flex bg-yellow-200 rounded-lg items-center gap-2">
+                    <input className="border-none p-2.5 rounded-md text-sm bg-yellow-200 text-dark focus:outline-none" ref={ingredientes}/>
+                    
+                    <button onClick={() => handleClick()} className="focus:outline-none flex items-center bg-transparent text-light p-2.5 px-2 text-sm font-semibold border-l border-neutral-00" ><HiOutlineMagnifyingGlassCircle size={25} className="text-black"/></button>
+                </div>
+                    <button onClick={() => handleReset()} className="focus:outline-none flex items-center bg-dark text-light p-2.5 px-6 rounded-md text-sm font-semibold hover:bg-light hover:text-dark border-2 border-solid borderl border-neutral-800" >
+                    Reset
+                    </button>
             </div>
 
         </main>
