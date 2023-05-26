@@ -30,13 +30,13 @@ export const receitas = [
             '500g de peito de frango picado em cubos', '1 caixinha de creme de leite', '1 colher (sopa) de ketchup', '1 colher (sopa) de manteiga'
         ],
         modoDePreparo: [
-            " 1. Cozinhe o peito de frango até ficar bem cozido.",
-            " 2. Após o cozimento, adicione o molho de tomate e cozinhe por 5 minutos em fogo baixo.",
-            " 3. Em seguida, adicione o creme de leite e cozinhe por mais 3 minutos, também em fogo baixo.",
-            " 4. Por último, adicione o sal a gosto.",
-            " 5. Sirva com batata palha e arroz branco à parte."
+
+              " 1. Cozinhe o peito de frango até ficar bem cozido. \n ",
+              " 2. Após o cozimento, adicione o molho de tomate e cozinhe por 5 minutos em fogo baixo. \n ",
+              " 3. Em seguida, adicione o creme de leite e cozinhe por mais 3 minutos, também em fogo baixo. \n ",
+              " 4. Por último, adicione o sal a gosto. \n ",
+              " 5. Sirva com batata palha e arroz branco à parte. \n ",
         ],
-        imagem: ""
     },
 
     //Frivasse de Frango
@@ -49,11 +49,12 @@ export const receitas = [
             '2 peitos de frango desfiados', '1 lata de creme de leite', '1 copo de requeijão cremoso', '100g de batata palha', '1 lata de milho verde', '100 g de azeitona sem caroço', '200g de mussarela fatiada', '1 xícara de água', '1 pitada de sal'
         ],
         modoDePreparo: [
-            " 1. Bata no liquidificador o milho, o requeijão, o creme de leite e a água.",
-            " 2. Refogue o creme do liquidificador com o frango desfiado, as azeitonas e o sal até ficar com uma textura espessa.",
-            " 3. Coloque o refogado numa assadeira, cubra com mussarela e espalhe a batata palha por cima.",
-            " 4. Leve ao forno até borbulhar.",
-            " 5. Sirva com arroz branco. "
+
+              " 1. Bata no liquidificador o milho, o requeijão, o creme de leite e a água. \n ",
+              " 2. Refogue o creme do liquidificador com o frango desfiado, as azeitonas e o sal até ficar com uma textura espessa. \n ",
+              " 3. Coloque o refogado numa assadeira, cubra com mussarela e espalhe a batata palha por cima. \n ",
+              " 4. Leve ao forno até borbulhar. \n ",
+              " 5. Sirva com arroz branco. ",
         ],
     },
 
@@ -84,21 +85,21 @@ export const receitas = [
             'Cenoura', 'Bolo', 'Bolo de Cenoura', 'doce', 'sobremesa'
         ],
         ingredientesReais: [
-              'Massa:','3 cenouras médias raladas', '1/2 xícara (chá) de óleo', '4 ovos', '2 e 1/2 xícaras (chá) de farinha de trigo', '2 xícaras (chá) de açúcar', '1 colher (sopa) de fermento em pó', 'Cobertura:','1 colher (sopa) de manteiga', '3 colheres (sopa) de chocolate em pó', '1 xícara (chá) de açúcar', 'Uma Xícara de Leite' , 'doce', 'sobremesa'
+              'Massa:','3 cenouras médias raladas', '1/2 xícara (chá) de óleo', '4 ovos', '2 e 1/2 xícaras (chá) de farinha de trigo', '2 xícaras (chá) de açúcar', '1 colher (sopa) de fermento em pó',
+              'Cobertura:','1 colher (sopa) de manteiga', '3 colheres (sopa) de chocolate em pó', '1 xícara (chá) de açúcar', 'Uma Xícara de Leite' , 'doce', 'sobremesa',
         ],  
         modoDePreparo: [
-            "  MASSA: ",
-            " 1. Em um liquidificador, adicione a cenoura, os ovos e o óleo, depois misture.",
-            " 2. Acrescente o açúcar e bata novamente por 5 minutos.",
-            " 3. Em uma tigela ou na batedeira, adicione a farinha de trigo e depois misture novamente.",
-            " 4. Acrescente o fermento e misture lentamente com uma colher. ",
-            " 5. Asse em um forno preaquecido a 180° C por aproximadamente 40 minutos.",
+              "  MASSA: \n ",
+              " 1. Em um liquidificador, adicione a cenoura, os ovos e o óleo, depois misture. \n ",
+              " 2. Acrescente o açúcar e bata novamente por 5 minutos. \n ",
+              " 3. Em uma tigela ou na batedeira, adicione a farinha de trigo e depois misture novamente. \n ",
+              " 4. Acrescente o fermento e misture lentamente com uma colher. ",
+              " 5. Asse em um forno preaquecido a 180° C por aproximadamente 40 minutos. \n ",
 
-            "  COBERTURA:",
-            " 1. Despeje em uma tigela a manteiga, o chocolate em pó, o açúcar e o leite, depois misture.",
-            " 2. Leve a mistura ao fogo e continue misturando até obter uma consistência cremosa, depois despeje a calda por cima do bolo. "
-        ],
-        imagem: ""
+              "  COBERTURA: \n ",
+              " 1. Despeje em uma tigela a manteiga, o chocolate em pó, o açúcar e o leite, depois misture. \n ",
+              " 2. Leve a mistura ao fogo e continue misturando até obter uma consistência cremosa, depois despeje a calda por cima do bolo. ",
+        ]
     },
 
     //Escondidinho de Carne
@@ -109,20 +110,17 @@ export const receitas = [
             '1 kg de batata', '200 g de queijo mussarela', '1 cebola', 'sal a gosto', 'cheiro-verde a gosto', '2 colheres de manteiga', '500 g de carne moída', 'azeite', '1 dente de alho amassado', 'pimenta branca a gosto', '1/2 copo de leite'
         ],
         modoDePreparo: [
-              " 1. Descasque as batatas, corte ao meio e cozinhe com água e sal.",
-            " 2. Depois de cozidas, amasse as batatas, adicione o leite e a manteiga, mexa bem até formar um purê e reserve.",
-            " 3. Em uma panela, adicione 1 fio de azeite, a cebola, o alho e refogue a carne moída.",
-            " 4. Tempere com sal, pimenta branca, cheiro-verde e cozinhe até secar a água que se formar na panela.",
-            " 5. Forre um refratário com a metade do purê de batatas.",
-            " 6. Acrescente uma camada de queijo e uma camada de carne moída.",
-            " 7. Repita as camadas e finalize com o queijo.",
-            " 8. Leve ao forno por 40 minutos.",
-            " 9. Sirva em seguida."
+              " 1. Descasque as batatas, corte ao meio e cozinhe com água e sal. \n ",
+              " 2. Depois de cozidas, amasse as batatas, adicione o leite e a manteiga, mexa bem até formar um purê e reserve. \n ",
+              " 3. Em uma panela, adicione 1 fio de azeite, a cebola, o alho e refogue a carne moída. \n ",
+              " 4. Tempere com sal, pimenta branca, cheiro-verde e cozinhe até secar a água que se formar na panela. \n ",
+              " 5. Forre um refratário com a metade do purê de batatas. \n ",
+              " 6. Acrescente uma camada de queijo e uma camada de carne moída. \n ",
+              " 7. Repita as camadas e finalize com o queijo. \n ",
+              " 8. Leve ao forno por 40 minutos. \n ",
         ],
-        imagem: ""
     },
-
-    //Bolo de Chocolate
+         //Bolo de Chocolate
     {
         nome: 'Bolo de Chocolate',
         ingredientes: [
@@ -307,7 +305,6 @@ export const receitas = [
             " 2. Em uma frigideira antiaderente, aqueça um fio de óleo e despeje uma porção da massa.",
             " 3. Espalhe a massa pela frigideira e deixe dourar dos dois lados.",
             " 4. Repita o processo até acabar a massa.",
-            
             "  RECHEIO:",
             " 1. Em uma panela, aqueça o óleo e refogue a cebola e o alho.",
             " 2. Adicione a carne moída e refogue até dourar.",
@@ -591,7 +588,6 @@ export const receitas = [
         ],
         imagem: ""
     },
-    
     //Salada de Frutas
     {
         nome: 'Salada de Frutas',

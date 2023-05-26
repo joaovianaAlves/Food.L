@@ -3,6 +3,7 @@ import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import Dropdown from "./dropdown";
+import {HiBars3BottomRight} from "react-icons/hi2"
 
 const CustomLink = ({href, title, className=""}) =>{
     const router = useRouter(); 
