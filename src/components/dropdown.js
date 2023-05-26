@@ -20,7 +20,7 @@ const Dropdown = (props) => {
     return (
         
 
-        <div className="bg-neutral-300 w-full h-20 hidden hover:block group-hover:block absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full z-50">
+        <div className="bg-yellow-200 w-full h-20 hidden hover:block group-hover:block absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full z-50">
             <CustomLink href="https://github.com/joaovianaAlves" target="_blank" title="Github" className="in"/>
         </div>
 )

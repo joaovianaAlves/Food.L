@@ -42,7 +42,7 @@ const fridge = () => {
                                     <li key={index}>{data}</li>
                                 )
                             })}</ul>
-                            {receitas[0].imagem ? <img className="border-solid border-black relative border-3  left-20 w-56 h-56 object-cover rounded-sm" src={receitas[0].imagem}/> : null }
+                            {receitas[0].imagem ? <img className="border-solid border-black relative border-3  left-60 w-56 h-56 object-cover rounded-sm" src={receitas[0].imagem}/> : null }
                             </div>
                             <div className="w-full">
                             {receitas[0].modoDePreparo.map((data, index)=>{
